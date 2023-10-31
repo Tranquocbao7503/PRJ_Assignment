@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="d-flex justify-content-center mb-2">
                                     <div>
-                                        <button type="button" class="btn btn-outline-primary" onclick="location.href = 'managerOrderDetail.jsp'">Manage Invoices</button>
+                                        <button type="button" class="btn btn-outline-primary" onclick="location.href = 'MainController?action=SeacrchInvoice'">Manage Invoices</button>
                                     </div>
                                 </div>
 
