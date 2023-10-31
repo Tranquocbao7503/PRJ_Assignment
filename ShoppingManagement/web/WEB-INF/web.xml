@@ -17,6 +17,10 @@
         <servlet-class>sample.controllers.UpdateCustomerController</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>SearchInvoiceController</servlet-name>
+        <servlet-class>sample.controllers.SearchInvoiceController</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>SigninController</servlet-name>
         <servlet-class>sample.controllers.SigninController</servlet-class>
     </servlet>
@@ -87,6 +91,10 @@
     <servlet-mapping>
         <servlet-name>LogoutController</servlet-name>
         <url-pattern>/LogoutController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchInvoiceController</servlet-name>
+        <url-pattern>/SearchInvoiceController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>UpdateCustomerController</servlet-name>

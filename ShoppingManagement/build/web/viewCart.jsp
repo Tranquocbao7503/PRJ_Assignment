@@ -23,6 +23,18 @@
         </style>
     </head>
     <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btn-dark" href="shopping.jsp">Add more</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <%
             Cart cart = (Cart) session.getAttribute("CART");
             if (cart != null && cart.size() > 0) {
@@ -101,7 +113,7 @@
                                         double vat = subtotal * vatRate; // Giá trị VAT
 
                                         double totalPrice = subtotal + vat; // Tổng giá trị cuối cùng
-%>
+                                    %>
                                     <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                                         Products
                                         <span>$<%= subtotal%></span>
@@ -134,7 +146,5 @@
         <%
             }
         %>
-        <a href="shopping.jsp">Add more</a><br>
-        <a href="index.html">Home</a>
     </body>
 </html>
